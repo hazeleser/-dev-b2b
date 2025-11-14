@@ -37,7 +37,11 @@ tab1, tab2, tab3, tab4= st.tabs(["General Look", "Descriptive Statistics", "ABC-
 # Data Load
 @st.cache_data
 def load_data():
-    df = pd.read_excel(r"/Users/edibenevagurbuz/Desktop/python/B2B_Transaction_Data.xlsx")
+    -dev-b2b/
+    app.py
+    B2B_Transaction_Data.xlsx
+    requirements.txt
+
     df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
     df['Year'] = df['InvoiceDate'].dt.year
     df['Month'] = df['InvoiceDate'].dt.to_period('M').astype(str)
